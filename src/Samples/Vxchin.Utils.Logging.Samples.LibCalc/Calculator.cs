@@ -2,7 +2,7 @@
 {
     public class Calculator : ICalculator
     {
-        private readonly ILog _log = Log.CreateLogger<Calculator>();
+        private readonly ILog _logger = Log.CreateLogger<Calculator>();
 
         public decimal Add(decimal x, decimal y)
         {
@@ -30,7 +30,7 @@
 
         private void LogCalculating(decimal x, decimal y, char op)
         {
-            _log.Debug("Calculating {X} {Operator} {Y}", x, op, y);
+            _logger.Debug("Calculating {X} {Operator} {Y}", x, op, y);
         }
     }
 }
