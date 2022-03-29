@@ -14,7 +14,7 @@
 
 1. 在解决方案中添加 `Vxchin.Utils.Logging` 的源代码。
 
-   > - 可根据需要通过在文件中查找与替换将 `Vxchin.Utils.Logging` 替换为适合自己的命名空间。
+   > 可根据需要通过在文件中查找与替换将 `Vxchin.Utils.Logging` 替换为适合自己的命名空间。
 
 2. 对于[非 SDK 样式](https://docs.microsoft.com/zh-cn/nuget/resources/check-project-format)的项目（如传统的 .NET Framework 项目），需要在主程序项目中添加对 NuGet 包 [`Microsoft.Extensions.Logging.Abstractions`](https://www.nuget.org/packages/Microsoft.Extensions.Logging.Abstractions/5.0.0) 5.0.0 的引用。
 
@@ -73,7 +73,24 @@
    }
    ```
    
-### 引入更多日志提供程序
+### 引入其他日志提供程序
+
+#### 引入 log4net 支持
+
+1. 在解决方案中添加 `Vxchin.Utils.Logging.Log4Net` 的源代码。
+
+   > 可根据需要通过在文件中查找与替换将 `Vxchin.Utils.Logging.Log4Net` 替换为适合自己的命名空间。
+
+2. 在进行日志记录前，调用 `Log.GlobalConfig()` 获取配置器，并调用其上的 `UseLog4Net()` 扩展方法启用 log4net 并配置支持。
+
+   ```csharp
+   static void Main(string[] args) {
+       Log.GlobalConfig().UseLog4Net( /* log4net options */ );
+       // ...
+   }
+   ```
+
+#### 引入更多日志提供程序
 
 对于需要更复杂日志输出的场景，可以通过调用 `Log.GlobalConfig().Advanced().UseFactory()` 方法传入任意自定义的 `ILoggerFactory` 对象。
 
