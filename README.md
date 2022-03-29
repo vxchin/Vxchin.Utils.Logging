@@ -1,10 +1,21 @@
 # Vxchin.Utils.Logging
 
-一个封装了 `Microsoft.Extensions.Logging` 通用的日志类库。
+一个通用的日志类库，建立在 `Microsoft.Extensions.Logging.Abstractions` 之上。
 
-在一些应用开发场景中，类库项目不希望过多引入第三方 NuGet 包。通过在解决方案中引入本项目，类库项目可通过仅添加对本项目的依赖，实现全功能、高效的日志记录功能。
+在多项目的解决方案中，通过引入该类库可以最小化需要日志功能的项目对外部项目的依赖。
 
-本项目内置了对控制台输出的支持，并通过 `Vxchin.Utils.Logging.Log4Net` 提供了对 log4net 的支持。
+## 项目目的
+
+在一些应用开发场景中，类库项目不希望过多引入第三方 NuGet 包。
+
+通过在解决方案中引入本项目，类库项目可通过仅添加对本项目的依赖，实现全功能、高效的日志记录功能。
+
+## 项目特点
+
+1. 在使用本类库的解决方案中，仅主项目需要添加 `Microsoft.Extensions.Logging.Abstractions` NuGet 包。其他适用本类库的项目无需任何第三方依赖。
+2. 对于需要添加更多日志提供程序支持的场景，仅需主项目添加更多项目引用，并进行相关配置，其他类库项目无需任何调整。
+3. 本项目内置了对控制台输出的支持，并通过 `Vxchin.Utils.Logging.Log4Net` 项目提供了对 log4net 的支持。
+4. 对于需要更复杂日志输出的场景，可以在主项目中引入 `Microsoft.Extensions.Logging` NuGet 包，并配置本类库使用其创建的 `ILoggerFactory` 实例。
 
 ## 使用方法
 
