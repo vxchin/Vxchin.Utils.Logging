@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3E08BD94-7F38-4CD7-AAE8-64BEA3D1A473}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>Vxchin.Utils.Logging.Samples</RootNamespace>
-    <AssemblyName>Vxchin.Utils.Logging.Samples</AssemblyName>
+    <ProjectGuid>{4C7E102B-005C-4C9C-88C0-248445987212}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Vxchin.Utils.Logging.Samples.LibCore</RootNamespace>
+    <AssemblyName>Vxchin.Utils.Logging.Samples.LibCore</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -33,9 +31,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.Extensions.Logging.Abstractions.5.0.0\lib\net461\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,12 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="LoggingDemo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Vxchin.Utils.Logging\Vxchin.Utils.Logging.csproj">
@@ -61,10 +52,6 @@
     <ProjectReference Include="..\Vxchin.Utils.Logging.Samples.LibCalc\Vxchin.Utils.Logging.Samples.LibCalc.csproj">
       <Project>{c0ac25df-fe61-4a94-9156-32a6ca350d65}</Project>
       <Name>Vxchin.Utils.Logging.Samples.LibCalc</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Vxchin.Utils.Logging.Samples.LibCore\Vxchin.Utils.Logging.Samples.LibCore.csproj">
-      <Project>{4c7e102b-005c-4c9c-88c0-248445987212}</Project>
-      <Name>Vxchin.Utils.Logging.Samples.LibCore</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

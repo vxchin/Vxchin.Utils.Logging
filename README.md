@@ -16,7 +16,7 @@
 
    > - 可根据需要通过在文件中查找与替换将 `Vxchin.Utils.Logging` 替换为适合自己的命名空间。
 
-2. 对于[非 SDK 样式](https://docs.microsoft.com/zh-cn/nuget/resources/check-project-format)的项目（如传统的 .NET Framework 项目），需要在主程序项目中添加对 NuGet 包 `Microsoft.Extensions.Logging.Abstractions` 的引用。
+2. 对于[非 SDK 样式](https://docs.microsoft.com/zh-cn/nuget/resources/check-project-format)的项目（如传统的 .NET Framework 项目），需要在主程序项目中添加对 NuGet 包 [`Microsoft.Extensions.Logging.Abstractions`](https://www.nuget.org/packages/Microsoft.Extensions.Logging.Abstractions/5.0.0) 5.0.0 的引用。
 
 3. 在进行日志记录前，调用 `Log.GlabalConfig()` 方法获取配置器，并调用在配置器上的方法对日志系统进行配置。
 
@@ -28,8 +28,6 @@
        \\ ...
    }
    ```
-
-   
 
 4. 在程序退出前，调用 `Log.Lifetime().Shutdown()` 方法关闭日志系统，以允许日志系统进行必要的清理工作。
 
@@ -75,4 +73,8 @@
    }
    ```
    
-   
+### 引入更多日志提供程序
+
+对于需要更复杂日志输出的场景，可以通过调用 `Log.GlobalConfig().Advanced().UseFactory()` 方法传入任意自定义的 `ILoggerFactory` 对象。
+
+用法详见 `Samples\Vxchin.Utils.Logging.Samples.Advanced` 示例项目。
