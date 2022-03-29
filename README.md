@@ -8,7 +8,7 @@
 
 ## 使用方法
 
-> 实际用法可参见 `src\Samples` 中的示例项目。
+> 实际用法可参见 `samples` 中的示例项目。
 
 ### 引入日志类库
 
@@ -22,10 +22,10 @@
 
    > 未进行配置时，日志系统将仅在控制台输出 `Information` 及以上级别的日志信息，并且不输出异常的调用堆栈。
 
-   ```csha
+   ```csharp
    static void Main(string[] args) {
        Log.GlobalConfig().UseSimpleConsole(LogLevel.Trace, printStackTrace: true);
-       \\ ...
+       // ...
    }
    ```
 
@@ -77,4 +77,4 @@
 
 对于需要更复杂日志输出的场景，可以通过调用 `Log.GlobalConfig().Advanced().UseFactory()` 方法传入任意自定义的 `ILoggerFactory` 对象。
 
-用法详见 `Samples\Vxchin.Utils.Logging.Samples.Advanced` 示例项目。
+用法详见 `samples\Vxchin.Utils.Logging.Samples.Advanced` 示例项目。
