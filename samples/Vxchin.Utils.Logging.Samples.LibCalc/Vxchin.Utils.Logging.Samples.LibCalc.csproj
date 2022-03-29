@@ -36,7 +36,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Vxchin.Utils.Logging\Vxchin.Utils.Logging.csproj">
+    <ProjectReference Include="..\..\src\Vxchin.Utils.Logging\Vxchin.Utils.Logging.csproj">
       <Project>{4949526b-2942-4eca-944b-399509c1dc22}</Project>
       <Name>Vxchin.Utils.Logging</Name>
     </ProjectReference>

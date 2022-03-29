@@ -3,26 +3,26 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32319.34
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vxchin.Utils.Logging", "Vxchin.Utils.Logging\Vxchin.Utils.Logging.csproj", "{4949526B-2942-4ECA-944B-399509C1DC22}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vxchin.Utils.Logging", "src\Vxchin.Utils.Logging\Vxchin.Utils.Logging.csproj", "{4949526B-2942-4ECA-944B-399509C1DC22}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vxchin.Utils.Logging.Log4Net", "Vxchin.Utils.Logging.Log4Net\Vxchin.Utils.Logging.Log4Net.csproj", "{5A7E0F46-01C4-43CB-A1ED-0E12E504F477}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vxchin.Utils.Logging.Log4Net", "src\Vxchin.Utils.Logging.Log4Net\Vxchin.Utils.Logging.Log4Net.csproj", "{5A7E0F46-01C4-43CB-A1ED-0E12E504F477}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vxchin.Utils.Logging.Samples", "Samples\Vxchin.Utils.Logging.Samples\Vxchin.Utils.Logging.Samples.csproj", "{3E08BD94-7F38-4CD7-AAE8-64BEA3D1A473}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vxchin.Utils.Logging.Samples", "samples\Vxchin.Utils.Logging.samples\Vxchin.Utils.Logging.Samples.csproj", "{3E08BD94-7F38-4CD7-AAE8-64BEA3D1A473}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{2408C79E-A53F-4E52-9A87-E2A5F5E74B40}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vxchin.Utils.Logging.Samples.LibCalc", "Samples\Vxchin.Utils.Logging.Samples.LibCalc\Vxchin.Utils.Logging.Samples.LibCalc.csproj", "{C0AC25DF-FE61-4A94-9156-32A6CA350D65}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vxchin.Utils.Logging.Samples.LibCalc", "samples\Vxchin.Utils.Logging.Samples.LibCalc\Vxchin.Utils.Logging.Samples.LibCalc.csproj", "{C0AC25DF-FE61-4A94-9156-32A6CA350D65}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{276DC2CC-DEC5-4927-BAD5-C6BB81ED13B8}"
 	ProjectSection(SolutionItems) = preProject
 		..\README.md = ..\README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vxchin.Utils.Logging.Samples.Log4Net", "Samples\Vxchin.Utils.Logging.Samples.Log4Net\Vxchin.Utils.Logging.Samples.Log4Net.csproj", "{796F8DD0-3840-44C5-B79B-80CA01C72501}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vxchin.Utils.Logging.Samples.Log4Net", "samples\Vxchin.Utils.Logging.Samples.Log4Net\Vxchin.Utils.Logging.Samples.Log4Net.csproj", "{796F8DD0-3840-44C5-B79B-80CA01C72501}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vxchin.Utils.Logging.Samples.Advanced", "Samples\Vxchin.Utils.Logging.Samples.Advanced\Vxchin.Utils.Logging.Samples.Advanced.csproj", "{50868EDD-6036-4F2B-9D91-903862D92715}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vxchin.Utils.Logging.Samples.Advanced", "samples\Vxchin.Utils.Logging.Samples.Advanced\Vxchin.Utils.Logging.Samples.Advanced.csproj", "{50868EDD-6036-4F2B-9D91-903862D92715}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vxchin.Utils.Logging.Samples.LibCore", "Samples\Vxchin.Utils.Logging.Samples.LibCore\Vxchin.Utils.Logging.Samples.LibCore.csproj", "{4C7E102B-005C-4C9C-88C0-248445987212}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vxchin.Utils.Logging.Samples.LibCore", "samples\Vxchin.Utils.Logging.Samples.LibCore\Vxchin.Utils.Logging.Samples.LibCore.csproj", "{4C7E102B-005C-4C9C-88C0-248445987212}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{3A4CBBAF-F058-4943-8B84-7F303DB9BAAB}"
 EndProject

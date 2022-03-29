@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Vxchin.Utils.Logging\Vxchin.Utils.Logging.csproj" />
+    <ProjectReference Include="..\..\src\Vxchin.Utils.Logging\Vxchin.Utils.Logging.csproj" />
     <ProjectReference Include="..\Vxchin.Utils.Logging.Samples.LibCalc\Vxchin.Utils.Logging.Samples.LibCalc.csproj" />
     <ProjectReference Include="..\Vxchin.Utils.Logging.Samples.LibCore\Vxchin.Utils.Logging.Samples.LibCore.csproj" />
   </ItemGroup>
