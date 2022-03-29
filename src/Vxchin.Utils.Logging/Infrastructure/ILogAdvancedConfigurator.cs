@@ -19,7 +19,7 @@ namespace Vxchin.Utils.Logging.Infrastructure
         ILogAdvancedConfigurator UseFactory(ILoggerFactory loggerFactory);
 
         /// <summary>
-        /// 指定 <see cref="Log"/> 使用给定的 <see cref="ILogAdapter"/> 实例创建 <see cref="ILogAdapter"/> 的实例。
+        /// 指定 <see cref="Log"/> 使用给定的 <see cref="ILogAdapter"/> 实例进行从 <see cref="ILogger"/> 到 <see cref="ILog"/> 的转换。
         /// </summary>
         /// <param name="adapter">给定的 <see cref="ILogAdapter"/> 对象，指定 <see langword="null"/> 表示使用默认的 <see cref="ILogAdapter"/> 实现。</param>
         ILogAdvancedConfigurator UseAdapter(ILogAdapter adapter);
