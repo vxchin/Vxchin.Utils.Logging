@@ -21,7 +21,7 @@ namespace Vxchin.Utils.Logging
     /// <remarks>
     ///   在整个应用程序的生命周期中：
     ///   <list type="bullet">
-    ///   <item>记录日志消息前，首先调用 <see cref="Config"/> 上的方法完成对日志系统的配置。</item>
+    ///   <item>记录日志消息前，首先调用 <see cref="GlobalConfig"/> 上的方法完成对日志系统的配置。</item>
     ///   <item>在应用程序退出前，需要调用 <see cref="Lifetime"/> 上的 <see cref="ILogLifetimeManager.Shutdown"/> 方法关闭日志系统，完成必要的清理操作。</item>
     ///   </list>
     /// </remarks>
@@ -42,7 +42,7 @@ namespace Vxchin.Utils.Logging
         /// 获取用于配置日志系统的配置器。
         /// </summary>
         [PublicAPI]
-        public static ILogConfigurator Config() => Configurator;
+        public static ILogConfigurator GlobalConfig() => Configurator;
 
         /// <summary>
         /// 获取用于管理日志系统生命周期的管理器。
